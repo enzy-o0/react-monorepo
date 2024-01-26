@@ -1,4 +1,14 @@
 {
   "name": "react_monorepo",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "design": "yarn workspace @monorepo/design-system",
+    "web": "yarn workspace @monorepo/react-web"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
