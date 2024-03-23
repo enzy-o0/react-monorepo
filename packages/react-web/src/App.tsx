@@ -4,6 +4,7 @@ import UnControlled from "./pages/UnControlled";
 import ImmerTest from "./pages/ImmerTest";
 import TodoAppContainer from "./pages/TodoList";
 import Clock from "./pages/Clock";
+import Chatting from "./pages/Chatting";
 
 type Props = {};
 
@@ -14,11 +15,12 @@ const App = (props: Props) => {
       {/* <UnControlled /> */}
       {/* <ImmerTest /> */}
       {/* <TodoAppContainer /> */}
-      <div className="boxStyle">
+      {/* <div className="boxStyle">
         <h2>간단한 디지털 시계</h2>
         <hr />
         <Clock formatString="HH:mm:ss" />
-      </div>
+      </div> */}
+      <Chatting />
     </div>
   );
 };

@@ -37,7 +37,7 @@ const TodoAppContainer = (props: Props) => {
   const toggleDone = (no: number) => {
     let index = todoList.findIndex((todo) => todo.no === no);
     let newTodoList = produce(todoList, (draft) => {
-      draft.done = !draft[index].done;
+      draft[index].done = !draft[index].done;
     });
     setTodoList(newTodoList);
   };
